@@ -7,6 +7,17 @@ body,div,p {
     margin:auto;
 }
 
+#menu {
+    display: flex; 
+    justify-content: space-between;    
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 400px;
+}
 
 #hebergements, #populaires {
     background-color:#F2F2F2;
