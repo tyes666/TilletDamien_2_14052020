@@ -2,10 +2,6 @@ body {
     font-family:"raleway", times, serif;
 }
 
-body,div,p {
-
-    margin:auto;
-}
 
 #menu {
     display: flex; 
@@ -53,8 +49,9 @@ ul {
 
 .Filtres {
     display: flex;  
-    align-content: center;  
+    align-items: center;
     
+        
 }
 
 .titre{
@@ -67,20 +64,23 @@ ul {
 .btn_filtre {
     display: flex;
     margin: 0px 2% 0px 0px;    
-    height: 40px;
     border: solid 3px #f2f2f2;
     border-radius: 40px;
-    text-align: center;
+    text-align: center;  
 }
 
 .icone2 {
     color: #0065fc;
-    background-color: #deebff;
+    background-color: #f2f2f2;
     border-radius: 50%;
-    width: 15px;
-    padding: 10px;
-    cursor: pointer;
-    
+    height: 40px;
+    width: 40px;    
+        
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+    position: relative;
+    top: 10px;
 }
 
 .btn_btn{
@@ -90,7 +90,7 @@ ul {
     text-align: center;
     width: auto;
     cursor: pointer;
-    background-color: inherit;
+    background-color: white;
     align-items: center;
 }
 
@@ -101,12 +101,8 @@ ul {
 }
 
 .btn_filtre :hover{
-    background-color: #ecfbff;
-    margin: 0px 2% 0px 0px;    
-    height: 40px;
-    border: solid 3px #f2f2f2;
-    border-radius: 40px;
-    text-align: center;
+    background-color: #f2f2f2;
+   
 }
 
 .autre {
