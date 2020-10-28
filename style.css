@@ -18,6 +18,8 @@ ul {
     list-style: none;
     width: 400px;
 }
+
+/* Barre de recherche */
 #search {
     margin: 15px 0 20px 0;
     display: flex;
@@ -44,9 +46,97 @@ ul {
 
 .fa-map-marker-alt {
     position: relative;
-    top: 10px;    
-      
+    top: 10px;      
 }
+
+/*filtres */
+
+.Filtres {
+    display: flex;  
+    align-content: center;  
+    
+}
+
+.titre{
+    margin-right: 50px; 
+    margin-left: 0px;
+    font-weight: bold;
+    
+}
+
+.btn_filtre {
+    display: flex;
+    margin: 0px 2% 0px 0px;    
+    height: 40px;
+    border: solid 3px #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.icone2 {
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    width: 15px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.btn_btn{
+    padding: 0px 20px 0px 20px;
+    border: 3px none #f2f2f2;
+    border-radius: 50px;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    background-color: inherit;
+    align-items: center;
+}
+
+.titre2{
+    color:black;
+    font-weight: bold;
+    
+}
+
+.btn_filtre :hover{
+    background-color: #ecfbff;
+    margin: 0px 2% 0px 0px;    
+    height: 40px;
+    border: solid 3px #f2f2f2;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.autre {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    margin: 20px 0px 30px 0px;
+}
+
+.fas_info {
+    border: 2px solid #f2f2f2;
+    width: 20px;
+    height: 17px;
+    border-radius: 50%;
+    min-width: 20px;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.fas_info i {
+    padding-left: 7px;
+    color: #0065fc;
+}
+
+.texte_info{
+    margin-left: 10px;
+    padding-top: 2px;
+    font-size: 13px;
+}
+
 
 
 #hebergements, #populaires {
