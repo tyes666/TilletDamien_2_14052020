@@ -18,6 +18,36 @@ ul {
     list-style: none;
     width: 400px;
 }
+#search {
+    margin: 15px 0 20px 0;
+    display: flex;
+    
+}
+
+.btn {
+    border: 2px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    color: #F2F2F2;
+    padding: 8px;
+}
+
+.icone {
+    
+    background-color: #F2F2F2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;      
+}
+
+.fa-map-marker-alt {
+    position: relative;
+    top: 10px;    
+      
+}
+
 
 #hebergements, #populaires {
     background-color:#F2F2F2;
