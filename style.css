@@ -1,0 +1,36 @@
+body {
+    font-family:"raleway", times, serif;
+}
+
+body,div,p {
+
+    margin:auto;
+}
+
+
+#hebergements, #populaires {
+    background-color:#F2F2F2;
+    }
+
+
+.clair {
+    color:#DEEBFF
+    }
+
+
+.bleu {
+    color:#0065FC
+
+        }
+
+.cap {
+    font-weight:bold;
+}
+
+.borduresimg {
+
+        border-radius: 10px;
+        background-color:white;
+        border-color:white;
+        padding:10px 10px;
+}
