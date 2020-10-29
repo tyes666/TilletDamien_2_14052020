@@ -2,7 +2,7 @@ body {
     font-family:"raleway", times, serif;
 }
 
-
+/* Navigation */
 #menu {
     display: flex; 
     justify-content: space-between;    
@@ -49,16 +49,14 @@ ul {
 
 .Filtres {
     display: flex;  
-    align-items: center;
-    
+    align-items: center;  
         
 }
 
 .titre{
     margin-right: 50px; 
     margin-left: 0px;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .btn_filtre {
@@ -67,6 +65,7 @@ ul {
     border: solid 3px #f2f2f2;
     border-radius: 40px;
     text-align: center;  
+    
 }
 
 .icone2 {
@@ -74,7 +73,7 @@ ul {
     background-color: #f2f2f2;
     border-radius: 50%;
     height: 40px;
-    width: 40px;    
+    width: 40px;  
         
 }
 
@@ -84,6 +83,8 @@ ul {
 }
 
 .btn_btn{
+    display: flex;
+    
     padding: 0px 20px 0px 20px;
     border: 3px none #f2f2f2;
     border-radius: 50px;
@@ -101,45 +102,162 @@ ul {
 }
 
 .btn_filtre :hover{
-    background-color: #f2f2f2;
-   
+    background-color: #f2f2f2;   
 }
 
-.autre {
+/* autres */
+.info {
     display: flex;
-    justify-content: flex-start;
-    width: 30%;
-    margin: 20px 0px 30px 0px;
+    align-items: center;
 }
-
-.fas_info {
-    border: 2px solid #f2f2f2;
-    width: 20px;
-    height: 17px;
+.vertical {    
+    text-align: center;    
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    min-width: 20px;
-    font-size: 12px;
-    padding-top: 3px;
-}
-
-.fas_info i {
-    padding-left: 7px;
-    color: #0065fc;
-}
-
-.texte_info{
-    margin-left: 10px;
-    padding-top: 2px;
-    font-size: 13px;
-}
-
-
-
-#hebergements, #populaires {
     background-color:#F2F2F2;
+    color:#0065FC;
+    margin: 0 50px 0 0;
+}
+
+.fa-info {
+    position: relative;
+    top: 10px;    
+}
+
+/* Première section, hébergemtns et populaires */
+#hebergements {
+    display: flex;
+    
+}
+
+#hebergements h1 {
+    width: 100%;
+}
+
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 66%;
+    background-color: crimson; 
+}
+.borduresimg {
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.room {    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:5px 5px;
+    background-color:white;
+    border-color:white;     
+    width: 266px;
+    height: 200px;  
+    
+}   
+.arrondi {
+    border-radius: 10px 10px 0 0;
+    width: 266px;
+    height: 130px;
+    object-fit: cover;      
+}
+
+#populaires {
+    display: flex;
+    width: 34%;
+}
+
+.arrondi2 {
+    border-radius: 10px 10px 0 0;
+    width: 266px;
+    height: 130px;
+    object-fit: cover;   
+    
+}
+.room2 {
+    
+    border-radius: 10px;
+    padding:5px 5px;
+    background-color:white;
+    border-color:white;
+    width: 280px;
+    height: 150;    
     }
 
+.arrondi {
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    width: 266px;
+    height: 130px;
+    object-fit: cover;   
+    
+}
 
+.room {
+    display:flex;   
+    border-radius: 10px;
+    padding:5px 5px;
+    background-color:white;
+    border-color:white;    
+    flex-wrap: wrap;
+    width: 266px;
+    height: 200px;    
+}
+
+#populaires {
+    display: flex;
+    width: 34%;
+    justify-content: space-around;
+    flex-direction: column;  
+    background-color: rgb(88, 69, 172);
+    
+    
+}
+
+.arrondi2 {
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    width: 266px;
+    height: 130px;
+    object-fit: cover;   
+    
+}
+.room2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:5px 5px;
+    background-color:white;
+    border-color:white;
+    width: 280px;
+    height: 150;    
+    }
+    
+
+
+#afficher
+{
+	
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 35px;
+	
+}
+
+    .cap {
+    font-weight:bold;
+    }
+    
+    
+
+
+
+
+/* couleur étoiles */
 .clair {
     color:#DEEBFF
     }
@@ -150,14 +268,3 @@ ul {
 
         }
 
-.cap {
-    font-weight:bold;
-}
-
-.borduresimg {
-
-        border-radius: 10px;
-        background-color:white;
-        border-color:white;
-        padding:10px 10px;
-}
