@@ -2,6 +2,23 @@ body {
     font-family:"raleway", times, serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+.hotel {
+    font-weight: bold;
+}
+
 /* Navigation */
 #menu {
     display: flex; 
@@ -126,7 +143,9 @@ ul {
     top: 10px;    
 }
 
-/* Première section, hébergemtns et populaires */
+/* Première section, hébergements et populaires */
+
+/* hébergements */
 
 #hebergements {
     display: flex;
@@ -136,6 +155,7 @@ ul {
 #hebergements h1 {
     width: 100%;
     margin-left: 30px;
+   
 }
 
 .test {
@@ -143,7 +163,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 66%;
-    background-color: crimson; 
+    background-color:#F2F2F2; 
     border-radius: 10px;
     margin-right: 50px;
     
@@ -178,44 +198,93 @@ ul {
 	padding-left: 35px;
 	
 }
+/* populaires */
 
 #populaires {
-    display: flex;
-    width: 34%;
+    
     border-radius: 10px;
-    justify-content: space-around;
-    flex-wrap: wrap;  
-    background-color: rgb(88, 69, 172);
-}
-
-.truc {
-    float: right;
+    background-color:#F2F2F2;  
+    width:34%; 
+        
+    }
+.flexbox {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
+#populaires h1 {
+    width: 100%;
+    display: flex;    
+    margin-left: 30px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    
+}
+
+.container a {
+    border-radius: 10px;
+    background-color: white;
+}
 
 .room2 {
-    border-radius: 10px;
     padding:5px 5px;
-    background-color:white;
     border-color:white;
     width:300px;
-     
-    }
-
-
+    height: 130px;
+}
 .arrondi2 {
     border-radius: 10px 0 0 10px;
     width: 130px;
     height: 130px;
     object-fit: cover;   
+}
+
+.truc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;      
+    margin-right: 20px;
+        
+}
+/* Activités */
+
+#activites {
+    background-color: blue;
+    display: flex;
+}
+
+#activites h1 {
+    width: 100%;
+    margin-left: 30px;
+    background-color: rgb(197, 58, 123);
+}
+
+.test2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(148, 168, 91); 
+    border-radius: 10px;
+    margin-right: 50px;
     
 }
 
-
-
+.arrondi3 {
+    border-radius: 10px 10px 0 0;
+    width: 266px;
+    height: 700px;
+}
 
     /* footer */
 #afficher
@@ -224,7 +293,8 @@ ul {
 	height: 20px;
 	display: flex;
 	justify-content: flex-start;
-	padding-left: 35px;
+    padding-left: 35px;
+    font-weight: bold;
 	
 }
     .cap {
