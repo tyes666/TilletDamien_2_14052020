@@ -17,6 +17,8 @@ h1 {
 
 .hotel {
     font-weight: bold;
+    
+    
 }
 
 /* Navigation */
@@ -163,6 +165,8 @@ ul {
     background-color: white;
 }
 
+
+
 .test {
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +248,7 @@ ul {
 .room2 {
     padding:5px 5px;
     border-color:white;
-    width:300px;
+    width:350px;
     height: 130px;
 }
 .arrondi2 {
@@ -259,36 +263,106 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     float: right;      
-    margin-right: 20px;
+    width: 200px;
         
 }
 /* Activités */
 
 #activites {
-    background-color: blue;
     display: flex;
     }
 
 #activites h1 {
     width: 100%;
-    margin-left: 30px;
-    background-color: rgb(197, 58, 123);
+    
+    
 }
 
 .test2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(148, 168, 91); 
+    justify-content: space-between;
     border-radius: 10px;
-    margin-right: 50px;
-    
+           
+}
+.room3 {
+    display:flex;    
+    border-radius: 10px;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 500px;
+    justify-content: flex-start;
+    box-shadow: 0px 5px 5px #F2F2F2; 
+      
 }
 
 .arrondi3 {
     border-radius: 10px 10px 0 0;
-    width: 266px;
-    height: 700px;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.imgcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.room4 {
+    display:flex;
+    border-radius: 10px;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 275px;
+    justify-content: flex-start;
+    box-shadow: 0px 5px 5px #F2F2F2; 
+         
+}
+.arrondi4 {
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.room5 {
+    display:flex;
+    border-radius: 10px;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 200px;
+    justify-content: flex-start;
+    box-shadow: 0px 5px 5px #F2F2F2; 
+         
+}
+.arrondi5 {
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.room6 {
+    display:flex;
+    border-radius: 10px;
+    background-color:white;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 220px;
+    justify-content: flex-start;
+    box-shadow: 0px 5px 5px #F2F2F2; 
+         
+}
+.arrondi6 {
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    height: 170px;
+    object-fit: cover;
 }
 
     /* footer */
