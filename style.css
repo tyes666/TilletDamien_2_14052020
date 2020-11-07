@@ -216,15 +216,7 @@ nav li:hover {
     object-fit: cover;      
 }
 
-#afficher
-{	
-	width: 100%;
-	height: 20px;
-	display: flex;
-	justify-content: flex-start;
-	padding-left: 35px;
-	
-}
+
 /* populaires */
 
 #populaires {
@@ -383,7 +375,6 @@ nav li:hover {
     object-fit: cover;
 }
 
-    /* footer */
 #afficher
 {	
 	width: 100%;
@@ -394,6 +385,8 @@ nav li:hover {
     font-weight: bold;
 	
 }
+    /* footer */
+
     .cap {
     font-weight:bold;
     }
@@ -425,3 +418,178 @@ footer div {
 footer h2 {
     font-size: 1em;
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        width: 375px;
+    }
+/* Activités */
+
+    .room3, .room4, .room5, .room6 {
+        width: 355px;
+        height: 160px;
+        
+        
+    }
+    .arrondi3, .arrondi4, .arrondi5, .arrondi6 {
+        width: 355px;
+        height: 100px;
+        
+    }
+ 
+/*   Hébergements */
+
+    #hebergements {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 15px;
+        
+        
+    }
+    #hebergements h1 {
+        width: 100%; 
+        background-color: white;               
+
+    }
+
+    .room {
+        width: 355px;   
+        height: 160px;
+        padding:0px 0px;
+        align-content: center;
+    }
+    
+    
+    .arrondi {
+        width: 355px;
+        height: 100px;
+    }
+
+    .test {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: white;
+        
+    }
+
+    .test a {
+        width: 355px;
+}
+
+#afficher {	
+	width: 100%;
+	height: 20px;
+	padding-left: 0px;
+	
+}
+/* Populaires */
+
+    #populaires h1 {
+        width: 100%;
+        flex-wrap: nowrap; 
+        background-color:#F2F2F2;   
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    #populaires {
+    
+        background-color:#F2F2F2;  
+        width:100%;
+        padding-left: 10px;
+        padding-right: 10px;
+            
+        }
+
+    .container {
+        background-color: #f2f2f2;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    
+    .flexbox {
+        margin-bottom: 20px;
+    }
+
+    
+    .test {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: white;
+        
+    }
+
+.test a {
+    width: 355px;
+}
+
+#afficher {	
+	width: 100%;
+	height: 20px;
+	padding-left: 0px;
+	
+}
+/* footer */
+
+footer {
+    width: 100%;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-left: -8px;
+    padding-left: 10px;
+    
+}
+
+.propos, .heberg, .ass {
+    width: 100%;
+}
+
+/* filtres */
+
+
+.Filtres {
+    flex-wrap: wrap;
+    padding-left: 10px;        
+}
+
+.titre{
+    width: 100%;  
+    margin-bottom: 10px;  
+}
+
+.btn_filtre {
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 350px;
+}
+    
+.resume {
+    padding-left: 10px;
+}
+
+/* barre de recherche */
+
+#search {
+    
+    justify-content: center;
+    
+}
+
+h3 {
+    width: 350px;    
+}
+
+
+
+    }
+    
