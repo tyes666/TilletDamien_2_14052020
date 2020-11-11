@@ -1,3 +1,4 @@
+
 body {
     font-family:"raleway", times, serif;
 }
@@ -52,7 +53,8 @@ nav li:hover {
 }
 
 /* Barre de recherche */
-#search {
+
+#btn_search {
     margin: 15px 0 20px 0;
     display: flex;
     
@@ -89,7 +91,7 @@ nav li:hover {
         
 }
 
-.titre{
+.titre {
     margin-right: 50px; 
     margin-left: 0px;
     font-weight: bold;    
@@ -185,7 +187,7 @@ nav li:hover {
 }
 
 
-.test {
+.container_heberg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -196,7 +198,7 @@ nav li:hover {
     
 }
 
-.room {
+.room_heberg {
     display:flex;
     flex-direction: column;  
     justify-content: space-around; 
@@ -241,7 +243,7 @@ nav li:hover {
     justify-content: space-between;
 }
 
-.container {
+.container_pop {
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -250,12 +252,12 @@ nav li:hover {
     
 }
 
-.container a {
+.container_pop a {
     border-radius: 10px;
     background-color: white;
 }
 
-.room2 {
+.room_pop {
     padding:5px 5px;
     border-color:white;
     width:350px;
@@ -268,7 +270,7 @@ nav li:hover {
     object-fit: cover;   
 }
 
-.truc {
+.room_pop_detail {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -288,14 +290,14 @@ nav li:hover {
     
 }
 
-.test2 {
+.container_activ {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
            
 }
-.room3 {
+.room_activ_col1_col3 {
     display:flex;    
     border-radius: 10px;
     background-color:white;
@@ -321,7 +323,7 @@ nav li:hover {
     
 }
 
-.room4 {
+.room_activ_col2_1 {
     display:flex;
     border-radius: 10px;
     background-color:white;
@@ -339,7 +341,7 @@ nav li:hover {
     object-fit: cover;
 }
 
-.room5 {
+.room_activ_col2_2 {
     display:flex;
     border-radius: 10px;
     background-color:white;
@@ -357,7 +359,7 @@ nav li:hover {
     object-fit: cover;
 }
 
-.room6 {
+.room_activ_col4 {
     display:flex;
     border-radius: 10px;
     background-color:white;
@@ -385,12 +387,7 @@ nav li:hover {
     font-weight: bold;
 	
 }
-    /* footer */
-
-    .cap {
-    font-weight:bold;
-    }
-    
+ 
 
 /* couleur étoiles */
 .clair {
@@ -409,26 +406,32 @@ footer {
     justify-content: space-around;
     background-color: #F2F2F2;
 }
+
 footer div {
     width:80%;
 	display: flex;
 	flex-direction: column;
     
 }
+
 footer h2 {
     font-size: 1em;
 }
 
-/* responsive */
+.cap {
+    font-weight:bold;
+    }
 
-@media screen and (max-width: 400px) {
+/* responsive iphone8 */
+
+@media screen and (max-width: 600px) {
     
     body {
         width: 375px;
     }
 /* Activités */
 
-    .room3, .room4, .room5, .room6 {
+    .room_activ_col1_col3, .room_activ_col2_1, .room_activ_col2_2, .room_activ_col4 {
         width: 355px;
         height: 160px;
         
@@ -455,7 +458,7 @@ footer h2 {
 
     }
 
-    .room {
+    .room_heberg {
         width: 355px;   
         height: 160px;
         padding:0px 0px;
@@ -468,7 +471,7 @@ footer h2 {
         height: 100px;
     }
 
-    .test {
+    .container_heberg {
         width: 100%;
         margin-top: 20px;
         margin-right: 0px;
@@ -477,7 +480,7 @@ footer h2 {
         
     }
 
-    .test a {
+    .container_heberg a {
         width: 355px;
 }
 
@@ -506,7 +509,7 @@ footer h2 {
             
         }
 
-    .container {
+    .container_pop {
         background-color: #f2f2f2;
         padding-left: 10px;
         padding-right: 10px;
@@ -518,7 +521,7 @@ footer h2 {
     }
 
     
-    .test {
+    .container_heberg {
         width: 100%;
         margin-top: 20px;
         margin-right: 0px;
@@ -527,7 +530,7 @@ footer h2 {
         
     }
 
-.test a {
+.container_heberg a {
     width: 355px;
 }
 
@@ -573,13 +576,13 @@ footer {
     width: 350px;
 }
     
-.resume {
+.search {
     padding-left: 10px;
 }
 
 /* barre de recherche */
 
-#search {
+#btn_search {
     
     justify-content: center;
     
@@ -589,7 +592,46 @@ h3 {
     width: 350px;    
 }
 
-
-
     }
     
+/* responsive tablette */
+
+
+@media all and (min-width: 720px) and (max-width:1200px) {
+
+        
+    /* Activités */
+    
+
+       .container_activ {
+        justify-content: space-around;
+    }
+        
+     
+    /* footer */
+    
+    footer {
+        margin-left: -8px;  
+        margin-right: -8px; 
+        padding-left: 10px;             
+    }
+    
+    footer div {
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .room_pop {
+        padding:5px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-color:white;
+        width:330px;
+        height: 130px;
+    }
+
+    
+
+    }
