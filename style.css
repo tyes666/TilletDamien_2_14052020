@@ -43,7 +43,7 @@ ul {
 
 
 nav li {
-    padding: 20px;
+    margin:20px;
     border: transparent solid;
     text-decoration: none;
 }
@@ -71,8 +71,26 @@ nav li:hover {
     border-radius: 0 10px 10px 0;
     font-weight: bold;
     color: #F2F2F2;
-    padding: 8px;
+    margin: 8px;
 }
+
+.btn2 {
+    border: 2px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #F2F2F2;
+    margin: 8px;
+}
+
+#btn_search2 {
+    margin: 15px 0 20px 0;
+    display: none;
+
+    
+}
+
+
 
 .icone {
     
@@ -226,25 +244,17 @@ nav li:hover {
 
 /* populaires */
 
-#populaires {
-    
+#populaires {   
     border-radius: 10px;
-    background-color:#F2F2F2;  
-    width:34%; 
-        
-    }
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 34%;
+    background-color:#F2F2F2; 
     
-}
+ }
+        
 
 #populaires h1 {
-    width: 100%;
     display: flex;    
-    margin-left: 30px;
-    margin-right: 20px;
+    width: 90%;   
     justify-content: space-between;
 }
 
@@ -257,32 +267,48 @@ nav li:hover {
     
 }
 
-.container_pop a {
-    border-radius: 10px;
+
+.room_pop_detail {
+    display: flex;
+    flex-direction: column;    
+    float: right;
+    justify-content: space-between;      
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
+    
+        
+} 
+
+.room_pop_texte {
+    display: flex;
+    flex-direction: column;
 }
 
+.prix {
+    padding-top: 10px;
+}
+
+
 .room_pop {
+    display: flex;
     padding:5px 5px;
     border-color:white;
-    width:350px;
-    height: 130px;
+    background-color: white;
+    width:330px;
+    border-radius: 10px;
+    
 }
+   
 .arrondi2 {
     border-radius: 10px 0 0 10px;
     width: 130px;
     height: 130px;
-    object-fit: cover;   
+    object-fit: cover; 
+      
 }
 
-.room_pop_detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: right;      
-    width: 200px;
-        
-}
 /* Activités */
 
 #activites {
@@ -424,6 +450,8 @@ footer h2 {
     font-weight:bold;
     }
 
+   
+
 /* responsive iphone8 */
 
 @media screen and (max-width: 667px) {
@@ -465,25 +493,37 @@ nav {
 }
 
 .bordure_act :hover {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: #0065FC solid;
+    
 }
 
 .bordure_heberg :hover {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: #0065FC solid;
 
 } 
+
+.inscrire {    
+    color: #0065FC;
+}
 
 .inscrire :hover {
     padding-bottom: 20px;
     border-bottom: #0065FC solid;
 }
 
+#btn_search {
+    display: none;
+    
+}
 
 
-.inscrire {
-    color:  #0065FC;
+#btn_search2 {
+    margin: 15px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 
@@ -495,7 +535,7 @@ nav {
 }
 
 #activites h1 {
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
     .room_activ_col1_col3, .room_activ_col2_1, .room_activ_col2_2, .room_activ_col4 {
@@ -523,8 +563,8 @@ nav {
     #hebergements h1 {
         
         background-color: white; 
-        padding-left: 15px;   
-        margin-left: 0px;           
+        margin-left: 15px;  
+                 
 
     }
 
@@ -566,26 +606,21 @@ nav {
 /* Populaires */
 
     #populaires h1 {
-        width: 100%;
-        flex-wrap: nowrap; 
-        background-color:#F2F2F2;   
-        margin-left: 0px;
-        margin-right: 0px;
+        width: 90%;
+        background-color:#F2F2F2; 
+        
         
     }
     #populaires {
-    
+        border-radius: 0px;
         background-color:#F2F2F2;  
-        width:100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        width:100%;        
             
         }
 
     .container_pop {
         background-color: #f2f2f2;
-        padding-left: 10px;
-        padding-right: 10px;
+        
         
     }
     
@@ -613,9 +648,8 @@ nav {
 footer {
     width: 100%;
     flex-direction: column;
-    background-color: #F2F2F2;
-    margin-left: -8px;
-    padding-left: 10px;
+    background-color: #F2F2F2;   
+    padding-left: 15px;
     
 }
 
@@ -628,7 +662,7 @@ footer {
 
 .Filtres {
     flex-wrap: wrap;
-    padding-left: 10px;        
+    margin-left: 10px;       
 }
 
 .titre{
@@ -645,7 +679,8 @@ footer {
 }
     
 .search {
-    padding-left: 10px;
+    padding-left: 0px;
+    margin-left: 10px;
 }
 
 /* barre de recherche */
@@ -665,17 +700,62 @@ h3 {
 /* responsive tablette */
 
 
-@media all and (min-width: 768px) and (max-width:1200px) {
-
-        
+@media all and (min-width: 668px) and (max-width:1200px) {
+    
+    
+    body {
+        width:100%;
+        margin-left: 10px;
+                       
+    }
+    
     /* Activités */
     
 
        #activites {
+        flex-direction: column;
         justify-content: space-around;
+        align-items: center;
     }
         
-     
+    #activites h1 {
+        padding-left: 35px;
+    }
+
+
+     /* hébergements */
+
+     .container_pop {
+         height: 1000px;
+         flex-direction: column;
+         justify-content: space-between;
+        
+                
+    }
+
+    .container_pop a {
+        border-radius: 10px;
+        background-color: white;
+    }
+       
+
+    .room_pop {
+        padding:5px 5px;
+        margin-left: 5px;
+        margin-right: 5px;        
+        border-color:white;
+        width:260px;
+        height: 150px;
+    }
+   
+
+    .arrondi2 {
+        border-radius: 10px 0 0 10px;
+        width: 130px;
+        height: 150px;
+        object-fit: cover;   
+    }
+
     /* footer */
     
     footer {
@@ -690,16 +770,38 @@ h3 {
         flex-direction: column;
         
     }
-    
-    .room_pop {
-        padding:5px 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-color:white;
-        width:330px;
-        height: 130px;
+    .container_heberg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        background-color:#F2F2F2; 
+        margin-right: 20px;
+        border-radius: 10px;
+        
     }
+    #populaires {   
+        border-radius: 10px;
+        width: 50%;
+        background-color:#F2F2F2;
+     
+        
+     }
 
+     .room_activ_col1_col3, .room_activ_col2_1, .room_activ_col2_2, .room_activ_col4 {
+        width: 355px;
+        height: 160px;
+        margin-bottom: 15px;
+        
+        
+    }
+    .arrondi3, .arrondi4, .arrondi5, .arrondi6 {
+        width: 355px;
+        height: 100px;
+        
+    }
     
     }
 
@@ -708,7 +810,13 @@ h3 {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
+#populaires h1 {
+    width: 100%;
+    display: flex;    
+    margin-left: 30px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
 
