@@ -28,11 +28,11 @@
             <div id="menu2" >
              <img src="images/logo/Reservia.svg" alt="Reservia" class="logo">
              
-             <span><a href="#" class="inscrire">S'inscrire</a></span>
+             <span class="truc"><a href="#" >S'inscrire</a></span>
          </div>
              <nav>  
-             <span><a href="#hebergements" class="bordure_heberg">Hébergements</a></span>
-             <span><a href="#activites" class="bordure_act">Activités</a></span></nav> 
+             <span class="bordure_heberg"><a href="#hebergements" >Hébergements</a></span>
+             <span class="bordure_act"><a href="#activites" >Activités</a></span></nav> 
          </div>
 
 <!-- Barre de recherche -->
@@ -48,8 +48,21 @@
          <input class="btn" type="button" value="Rechercher">
       </div>     
    </form>
-      </div>
-      <br>
+      
+
+      
+   
+         <form method="POST" >
+            <div id="btn_search2">         
+            <span class="icone"><i class="fas fa-map-marker-alt"></i></span>
+            <input type="text" id="Ville" name="Ville" value="Marseille, France"/>
+            <button class="btn2">
+               <i class="fas fa-search"></i>
+               </button>
+         </div>     
+      </form>
+   </div>
+      
 
 <!-- Filtres -->
 
@@ -202,67 +215,74 @@
    
 
    <!-- Section 2 Les plus populaires -->
+   
+   
    <aside id="populaires">
 
       <div class="flexbox">
       <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
       
       
-      <div class="container_pop">      
-
-         <a href="#">
-            <div class="room_pop"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="arrondi2"/>
-               
-             <div class="room_pop_detail"> 
-      
-               <span class="hotel">Hôtel Le soleil du</span>
-               <span class="hotel">matin</span>
-               <span>Nuit à partir de 128€</span>
-      <div><br><br><br>
-      <span class="bleu"><i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i></span></div>
+        
+        <div class="container_pop">      
+  
+           <a href="#">
+              <div class="room_pop"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="arrondi2"/>
+                 
+               <div class="room_pop_detail"> 
+        <div class="room_pop_texte">
+                 <span class="hotel">Hôtel Le soleil du</span>
+                 <span class="hotel">matin</span>
+                 <span class="prix">Nuit à partir de 128€</span>
+              </div>
+        <span class="bleu"><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i></span>
+        </div></div>
+        </a>
+        
+        <a href="#">
+          <div class="room_pop"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" class="arrondi2"/>
+          
+             <div class="room_pop_detail">
+              <div class="room_pop_texte">
+                <span class="hotel">Au coeur de l'eau</span>
+                <span class="hotel">Chambres d'hôtes</span>
+                <span class="prix">Nuit à partir de 71€</span>
+              </div>
+              <div>
+       <span class="bleu"><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i></span>
+          <span class="clair"><i class="fas fa-star"></i></span></div>
+       
       </div></div>
-      </a>
-      
-      <a href="#">
-         <div class="room_pop"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" class="arrondi2"/>
-         
-            <div class="room_pop_detail">
-               
-               <span class="hotel">Au coeur de l'eau</span>
-               <span class="hotel">Chambres d'hôtes</span>
-               <span>Nuit à partir de 71€</span>
-      <div><br><br><br>
-      <span class="bleu"><i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i></span>
-         <span class="clair"><i class="fas fa-star"></i></span></div>
-      
-            </div></div>
-         </a>
-      
-         <a href="#">
-            <div class="room_pop"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="arrondi2"/>
-      
-               <span class="room_pop_detail">  
-      
-               <span class="hotel">Hôtel Tout bleu et</span>
-               <span class="hotel">Blanc</span>
-               <span>Nuit à partir de 68€</span>
-         <span><br><br><br>
-         <span class="bleu"><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i></span>
-            <span class="clair"><i class="fas fa-star"></i></span></span>
-         </span></div>
-         </a>
+          </a>
+       
+          <a href="#">
+             <div class="room_pop"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="arrondi2"/>
+       
+                <div class="room_pop_detail">  
+                  <div class="room_pop_texte">
+                <span class="hotel">Hôtel Tout bleu et</span>
+                <span class="hotel">Blanc</span>
+                <span class="prix">Nuit à partir de 68€</span>
+                  </div>
+          <div>
+          <span class="bleu"><i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i></span>
+             <span class="clair"><i class="fas fa-star"></i></span></div>
+          </div></div>
+          </a>
+  
       </div></div>
-</aside>
+       
+  </aside>
 
 </section>  
 <br><br>
