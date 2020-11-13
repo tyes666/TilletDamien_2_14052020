@@ -17,9 +17,9 @@
          <img src="images/logo/Reservia.svg" alt="Reservia" class="logo">
          <nav>
             <ul>       
-         <li><a href="#hebergements">Hébergements</a></li>
-         <li><a href="#activites">Activités</a></li>
-         <li><a href="#" class="inscrire">S'inscrire</a></li>
+         <li class="hebergs"><a href="#hebergements">Hébergements</a></li>
+         <li class="act"><a href="#activites">Activités</a></li>
+         <li class="inscrire"><a href="#">S'inscrire</a></li>
       </ul> 
       </nav> 
          </div>
@@ -28,34 +28,33 @@
             <div id="menu2" >
              <img src="images/logo/Reservia.svg" alt="Reservia" class="logo">
              
-             <span class="truc"><a href="#" >S'inscrire</a></span>
+             <span class="mobile_inscrire"><a href="#" >S'inscrire</a></span>
          </div>
              <nav>  
-             <span class="bordure_heberg"><a href="#hebergements" >Hébergements</a></span>
-             <span class="bordure_act"><a href="#activites" >Activités</a></span></nav> 
+             <span class="mobile_hebergs"><a href="#hebergements" >Hébergements</a></span>
+             <span class="mobile_act"><a href="#activites" >Activités</a></span></nav> 
          </div>
 
 <!-- Barre de recherche -->
 
       <div class="search">
-      <h3>Trouvez votre hébergement pour des vacances de rève</h3>
-      <p>En plein centre ville ou en pleine nature</p><br>
+      <h1>Trouvez votre hébergement pour des vacances de rève</h1>
+      <p>En plein centre ville ou en pleine nature</p>
 
       <form method="POST" >
          <div id="btn_search">         
          <span class="icone"><i class="fas fa-map-marker-alt"></i></span>
-         <input type="text" id="Ville" name="Ville" value="Marseille, France"/>
+         <input type="text" id="Ville" value="Marseille, France"/>
          <input class="btn" type="button" value="Rechercher">
       </div>     
    </form>
       
-
       
    
          <form method="POST" >
             <div id="btn_search2">         
             <span class="icone"><i class="fas fa-map-marker-alt"></i></span>
-            <input type="text" id="Ville" name="Ville" value="Marseille, France"/>
+            <input type="text" id="Ville2" value="Marseille, France"/>
             <button class="btn2">
                <i class="fas fa-search"></i>
                </button>
@@ -102,12 +101,12 @@
    </div>
 </div>
       
-<br>
+
 <div class="info">
    <div class="vertical"><i class="fas fa-info"></i></div>
    <p>Plus de 500 logements sont disponibles dans cette ville</p>
 </div>      
-<br>
+
 </header>
    
    
@@ -119,7 +118,7 @@
       
       <div class="container_heberg">
 
-         <h1>Hébergements à Marseille</h1>
+         <h2>Hébergements à Marseille</h2>
           <a href="#">
             <div class="room_heberg"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" class="arrondi"/>
       
@@ -220,7 +219,7 @@
    <aside id="populaires">
 
       <div class="flexbox">
-      <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
+      <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
       
       
         
@@ -285,14 +284,14 @@
   </aside>
 
 </section>  
-<br><br>
+
    <!-- Section 3 Activités -->
    
    <section id="activites">
 
       
 
-      <h1>Activités à Marseille</h1>
+      <h2>Activités à Marseille</h2>
 
             <a href="#">
          <div class="room_activ_col1_col3"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="arrondi3"/>
@@ -327,25 +326,38 @@
       <div class="room_activ_col4"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"  alt="Parc Longchamp" class="arrondi6"/>      
       <span class="hotel">Parc Longchamp</span>
    </div></a></div>
-</div>
+
    </section>
-   <br><br>
+   
+
    <footer>
+
+
       <div class="propos">
          <h2>A propos</h2>
-            <p>Fonctionnement du site</p>
-            <p>Conditions génèrales de vente</p>
-            <p>Données et confidentialité</p>
+         <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions génèrales de vente</li>
+            <li>Données et confidentialité</li>
+         </ul>
       </div>
+
+
       <div class="heberg">
          <h2>Nos hébergements</h2>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
+         <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+         </ul>
       </div>
+
+
       <div class="ass">
          <h2>Assistance</h2>
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+         <ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+         </ul>
       </div>
    </footer>
 
