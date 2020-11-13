@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Raleway';
+	src:url(Raleway/static/Raleway-Regular.ttf);
+	
+}
 
 body {
     font-family:"raleway", times, serif;
@@ -5,16 +10,18 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    
+}
+#hebergements a, #activites a{
+    color:black;
 }
 
-a:hover {
-    color:  #0065FC;
-}
 
-h1 {
+h1, h2 {
     font-size: 1.2em;
 }
+
+
 
 .hotel {
     font-weight: bold;
@@ -41,6 +48,7 @@ ul {
     width: 400px;
     }
 
+    
 
 nav li {
     margin:20px;
@@ -48,39 +56,55 @@ nav li {
     text-decoration: none;
 }
 
-nav li:hover {
-    border-top: #0065FC solid;
-}
 
-
-.inscrire {
+.inscrire a{
     color:  #0065FC;
 }
 
-/* Barre de recherche */
+.inscrire a:hover{
+    border-top: #0065FC solid;
+    padding-top:10px;
+}
+.hebergs a, .act a {
+    color:black 
+}
+
+.hebergs a:hover, .act a:hover{
+    border-top: #0065FC solid;
+    padding-top:10px;
+    color: #0065FC
+}
+
+
+
+
+/* Barre de recherche*/
 
 #btn_search {
     margin: 15px 0 20px 0;
     display: flex;
+      
     
 }
 
 .btn {
-    border: 2px solid #0065FC;
+    border: none;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
     font-weight: bold;
     color: #F2F2F2;
-    margin: 8px;
+    
 }
 
 .btn2 {
-    border: 2px solid #0065FC;
+    border: none;
     background-color: #0065FC;
     border-radius: 10px;
     font-weight: bold;
     color: #F2F2F2;
-    margin: 8px;
+    height: 40px;
+    width: 40px;
+    
 }
 
 #btn_search2 {
@@ -90,10 +114,7 @@ nav li:hover {
     
 }
 
-
-
-.icone {
-    
+.icone {    
     background-color: #F2F2F2;
     height: 40px;
     width: 40px;
@@ -195,10 +216,11 @@ nav li:hover {
 
 #hebergements {
     display: flex;
+    margin-top: 10px;
     
 }
 
-#hebergements h1 {
+#hebergements h2 {
     width: 100%;
     margin-left: 30px;
    
@@ -228,11 +250,12 @@ nav li:hover {
     border-radius: 10px;
     padding:5px 5px;
     background-color:white;
-    border-color:white;    
+    border: none; 
     flex-wrap: wrap;
     width: 266px;
     height: 200px; 
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px #F2F2F2;    
 }
 .arrondi {
     border-radius: 10px 10px 0 0;
@@ -252,7 +275,7 @@ nav li:hover {
  }
         
 
-#populaires h1 {
+#populaires h2 {
     display: flex;    
     width: 90%;   
     justify-content: space-between;
@@ -294,7 +317,6 @@ nav li:hover {
 .room_pop {
     display: flex;
     padding:5px 5px;
-    border-color:white;
     background-color: white;
     width:330px;
     border-radius: 10px;
@@ -316,9 +338,10 @@ nav li:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
+    margin-top: 40px;
     }
 
-#activites h1 {
+#activites h2 {
     width: 100%;
     
     
@@ -429,16 +452,21 @@ nav li:hover {
         }
 
 /* footer */
+
+
 footer {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background-color: #F2F2F2;
+    margin-top: 40px;
 }
 
 footer div {
     width:80%;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
     
 }
 
@@ -449,6 +477,13 @@ footer h2 {
 .cap {
     font-weight:bold;
     }
+
+footer ul {
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+    line-height: 2;
+}  
 
    
 
@@ -464,6 +499,11 @@ footer h2 {
         align-items: center;
                 
     }
+
+    h1, h2 {
+        font-size: 1.8em;
+    }
+    
 
 #menu {
     display: none;
@@ -492,26 +532,22 @@ nav {
     
 }
 
-.bordure_act :hover {
+.mobile_act :active, .mobile_hebergs :active {
     padding-bottom: 15px;
     border-bottom: #0065FC solid;
+    color:#0065FC
     
 }
 
-.bordure_heberg :hover {
-    padding-bottom: 15px;
-    border-bottom: #0065FC solid;
+ 
+ .mobile_hebergs a, .mobile_act a {
+     color: black;
+ }
 
-} 
-
-.inscrire {    
+.mobile_inscrire a{    
     color: #0065FC;
 }
 
-.inscrire :hover {
-    padding-bottom: 20px;
-    border-bottom: #0065FC solid;
-}
 
 #btn_search {
     display: none;
@@ -532,9 +568,10 @@ nav {
 #activites {
     flex-direction: column;
     align-items: center;
+    width:100%;
 }
 
-#activites h1 {
+#activites h2 {
     margin-left: 15px;
 }
 
@@ -560,7 +597,7 @@ nav {
         
         
     }
-    #hebergements h1 {
+    #hebergements h2 {
         
         background-color: white; 
         margin-left: 15px;  
@@ -605,7 +642,7 @@ nav {
 
 /* Populaires */
 
-    #populaires h1 {
+    #populaires h2 {
         width: 90%;
         background-color:#F2F2F2; 
         
@@ -657,6 +694,12 @@ footer {
     width: 100%;
 }
 
+footer ul {
+    width:100%;
+}
+
+
+
 /* filtres */
 
 
@@ -691,16 +734,14 @@ footer {
     
 }
 
-h3 {
-    width: 260px;    
-}
+
 
     }
     
 /* responsive tablette */
 
 
-@media all and (min-width: 668px) and (max-width:1200px) {
+@media all and (min-width: 668px) and (max-width:1450px) {
     
     
     body {
@@ -718,7 +759,7 @@ h3 {
         align-items: center;
     }
         
-    #activites h1 {
+    #activites h2 {
         padding-left: 35px;
     }
 
@@ -743,7 +784,7 @@ h3 {
         padding:5px 5px;
         margin-left: 5px;
         margin-right: 5px;        
-        border-color:white;
+        
         width:260px;
         height: 150px;
     }
@@ -759,17 +800,20 @@ h3 {
     /* footer */
     
     footer {
-        margin-left: -8px;  
-        margin-right: -8px; 
-        padding-left: 10px;             
+        
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .propos, .heberg, .ass {
+        width: 100%;
+        align-items: center;
+    }
+
+    footer ul {
+        align-items: center;
     }
     
-    footer div {
-        
-        display: flex;
-        flex-direction: column;
-        
-    }
     .container_heberg {
         display: flex;
         flex-wrap: wrap;
@@ -805,20 +849,3 @@ h3 {
     
     }
 
-    /*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-#populaires h1 {
-    width: 100%;
-    display: flex;    
-    margin-left: 30px;
-    margin-right: 20px;
-    justify-content: space-between;
-}
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
