@@ -17,6 +17,7 @@ a {
 }
 
 
+
 h1, h2 {
     font-size: 1.2em;
 }
@@ -83,6 +84,7 @@ nav li {
 #btn_search {
     margin: 15px 0 20px 0;
     display: flex;
+    
       
     
 }
@@ -93,6 +95,7 @@ nav li {
     border-radius: 0 10px 10px 0;
     font-weight: bold;
     color: #F2F2F2;
+    cursor: pointer;
     
 }
 
@@ -132,6 +135,7 @@ nav li {
 .Filtres {
     display: flex;  
     align-items: center;  
+    
         
 }
 
@@ -165,13 +169,10 @@ nav li {
 }
 
 .btn_btn{
-    display: flex;
-    
-    padding: 0px 20px 0px 20px;
+    display: flex;    
     border: 3px none #f2f2f2;
     border-radius: 50px;
     text-align: center;
-    width: auto;
     cursor: pointer;
     background-color: white;
     align-items: center;
@@ -532,17 +533,34 @@ nav {
     
 }
 
-.mobile_act :active, .mobile_hebergs :active {
-    padding-bottom: 15px;
-    border-bottom: #0065FC solid;
-    color:#0065FC
+
+  
+table {
+    width:100%;
+    text-align: center;
+    
     
 }
 
+td {
+    width:50%;
+    height:50px;
+    border-bottom: #f2f2f2 solid;
+        
+}
  
- .mobile_hebergs a, .mobile_act a {
-     color: black;
- }
+td a {
+    color: black;
+}
+
+td a:active {
+    color:#0065FC;
+         
+}
+ 
+td:active {
+    border-bottom: #0065FC solid;
+}
 
 .mobile_inscrire a{    
     color: #0065FC;
@@ -561,8 +579,17 @@ nav {
     justify-content: center;
     
 }
+/* filtres */
 
+.Filtres {
+    width:80%;  
+    
+        
+}
 
+.btn_filtre :active{
+    background-color: #f2f2f2;   
+}
 /* Activités */
 
 #activites {
