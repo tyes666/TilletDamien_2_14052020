@@ -1,12 +1,15 @@
-@font-face {
-	font-family: 'Raleway';
+@font-face{
+	font-family:"Raleway";
 	src:url(Raleway/static/Raleway-Regular.ttf);
 	
 }
 
 body {
     font-family:"raleway", times, serif;
+    align: center;
 }
+
+#contenant {}
 
 a {
     text-decoration: none;
@@ -620,7 +623,7 @@ td:active {
     #hebergements {
         flex-direction: column-reverse;
         align-items: center;
-        width: 375px;
+        width: 100%;
         
         
     }
@@ -693,18 +696,9 @@ td:active {
     }
 
     
-    .container_heberg {
-        width: 100%;
-        margin-top: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        background-color: white;
-        
-    }
+ 
 
-.container_heberg a {
-    width: 355px;
-}
+
 
 
 /* footer */
