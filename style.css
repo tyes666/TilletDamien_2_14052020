@@ -6,7 +6,7 @@
 
 body {
     font-family:"raleway", times, serif;
-    align: center;
+    
 }
 
 #contenant {}
@@ -446,7 +446,7 @@ nav li {
 
 /* couleur étoiles */
 .clair {
-    color:#F2F2F2
+    color:#deebff
     }
 
 
