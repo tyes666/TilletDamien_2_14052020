@@ -554,6 +554,13 @@ footer ul {
         
     }
 
+    .nav1_1:hover {
+        border-top: none;
+        color: #0065FC;
+        
+        
+    }
+
 
 
     .nav1_2 {
@@ -573,6 +580,14 @@ footer ul {
         
 
     }
+
+    .nav1_2:hover {
+        border-top: none;
+        color: #0065FC;
+        
+        
+    }
+
     .inscrire {
         position: absolute;
         right: 0px;
