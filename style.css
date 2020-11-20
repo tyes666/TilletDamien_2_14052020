@@ -11,87 +11,112 @@ body {
     display: flex;
     justify-content: center;
     
-    
-    
-    
 }
 
 #contenant {
     max-width: 1450px;
     
-	
-    
 }
 
 a {
     text-decoration: none;
+    color:black;
     
 }
-#hebergements a, #activites a{
-    color:black;
+
+.hebergs, .act{
+    color: black;
 }
-
-
 
 h1, h2 {
     font-size: 1.2em;
 }
 
-
-
 .hotel {
     font-weight: bold;
     
+}
+
+/* nav */
+
+.nav1_1 {
+    width: 140px;
+    height: 100%;
+    padding-top: 40px;
     
 }
 
-/* Navigation */
-#menu {
-    display: flex;
-    justify-content: space-between;
-      
+.nav1_1:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    
+    
 }
 
-.menu_resp {
-    display: none;
+
+.nav1_2 {
+    width: 140px;
+    height: 100%;
+    padding-top: 40px;
+
 }
 
-ul {
+.nav1_2:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    
+
+}
+
+.inscrire a {
+    width: 140px;
+    height: 100%;
+    padding-top: 40px;    
+    color: #0065FC;
+}
+
+.inscrire a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    
+}
+
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+
+nav ul {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
-    width: 400px;
-    }
+}
 
-    
-
-nav li {
-    margin:20px;
-    border: transparent solid;
+li a {
+    text-align:center;
     text-decoration: none;
+    color: black;
+    height: 100%;
+
 }
 
-
-.inscrire a{
-    color:  #0065FC;
+nav a {
+    display: block;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+ 
 }
 
-.inscrire a:hover{
-    border-top: #0065FC solid;
-    padding-top:10px;
+#reservia {
+    object-fit: scale-down;
+    height: 3.5em;
+    float: left;
+    margin-top: 25px;
 }
-.hebergs a, .act a {
-    color:black 
-}
-
-.hebergs a:hover, .act a:hover{
-    border-top: #0065FC solid;
-    padding-top:10px;
-    color: #0065FC
-}
-
-
 
 
 /* Barre de recherche*/
@@ -445,6 +470,7 @@ nav li {
  
 
 /* couleur étoiles */
+
 .clair {
     color:#deebff
     }
@@ -508,67 +534,117 @@ footer ul {
         font-size: 1.6em;
     }
     
-    
 
-#menu {
-    display: none;
-          
-}
-
-.menu_resp {
-    display: inline;
-}
-
-#menu2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    
-    
-}
-
-
-  
-table {
-    width:100%;
-    text-align: center;
-    
-    
-}
-
-td {
-    width:50%;
-    height:50px;
-    border-bottom: #f2f2f2 solid;
+    .nav1_1 {
+        border-bottom: 3px solid #deebff;
+        border-top: 0px;
+        position: absolute;
+        left: 0px;
+        width:50%;
+        height: 50%;
+        padding-top: 30px;
         
-}
- 
-td a {
-    color: black;
-}
 
-td a:active {
-    color:#0065FC;
-         
-}
- 
-td:active {
-    border-bottom: #0065FC solid;
-}
+    }
 
-.mobile_inscrire a{    
-    color: #0065FC;
-}
+    .nav1_1:active {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;        
+        
+    }
+
+
+
+    .nav1_2 {
+        border-bottom: 3px solid #deebff;
+        position: absolute;
+        right: 0px;
+        width:50%;
+        height: 50%;
+        padding-top: 30px;
+
+    }
+
+    .nav1_2:active {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        
+
+    }
+    .inscrire {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        grid-area: inscrire;
+        padding-top: 40px;
+        text-align: end;
+        font-weight: 600;
+        color: #0065FC;
+    }
+
+    .inscrire a {
+        display: inline-block;
+        color: #0065FC;
+        padding-top: 0px;
+        height:30px;
+
+    }
+    
+    .inscrire a:hover {
+        border-top: 0px solid white;
+        color:  #0065FC;
+
+    }
+
+
+    nav {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo inscrire"
+        "nav nav ";
+        font-size: 2vh;
+    }
+
+
+    nav ul {
+        grid-area: nav;
+        display: flex;
+
+    }
+
+    li a {
+        text-align:center;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+
+    }
+
+    nav a {
+        display: block;
+        text-align:center;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+
+    
+    #reservia{
+        grid-area: logo;
+        object-fit: scale-down;
+        height: 3.5em;
+        margin-top: 15px;
+        padding-left: 19px;
+
+    }
+
 
 
 .loupe {
@@ -754,6 +830,7 @@ footer ul {
 .search {
     padding-left: 0px;
     margin-left: 10px;
+    margin-top: 50px;
 }
 
 /* barre de recherche */
@@ -763,8 +840,6 @@ footer ul {
     justify-content: center;
     
 }
-
-
 
     }
     
