@@ -8,13 +8,19 @@
 
 body {
     font-family:"raleway", times, serif;
+    display: flex;
+    justify-content: center;
+    
     
     
     
 }
 
 #contenant {
-    width:100%;
+    max-width: 1450px;
+    
+	
+    
 }
 
 a {
@@ -108,22 +114,8 @@ nav li {
     
 }
 
-.btn2 {
-    border: none;
-    background-color: #0065FC;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #F2F2F2;
-    height: 40px;
-    width: 40px;
-    
-}
-
-#btn_search2 {
-    margin: 15px 0 20px 0;
+.loupe {
     display: none;
-
-    
 }
 
 .icone {    
@@ -229,6 +221,8 @@ nav li {
     margin-top: 10px;
     
 }
+
+
 
 #hebergements h2 {
     width: 100%;
@@ -514,6 +508,7 @@ footer ul {
         font-size: 1.6em;
     }
     
+    
 
 #menu {
     display: none;
@@ -576,18 +571,25 @@ td:active {
 }
 
 
-#btn_search {
-    display: none;
-    
-}
-
-
-#btn_search2 {
-    margin: 15px 0 20px 0;
+.loupe {
     display: flex;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    color: #F2F2F2;
+    height:40px;
+    width:40px;
+    align-items: center;
     justify-content: center;
-    
+    cursor: pointer;    
 }
+
+.btn {
+    display: none;
+}
+
+
 /* filtres */
 
 .Filtres {
@@ -718,8 +720,8 @@ footer {
 }
 
 .propos, .heberg, .ass {
-    width: 100%;
     padding-left: 15px;
+    
 }
 
 footer ul {
@@ -774,7 +776,7 @@ footer ul {
     
     body {
         width:100%;
-        margin-left: 10px;
+        
                        
     }
     
